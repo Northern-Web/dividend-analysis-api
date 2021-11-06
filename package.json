@@ -1,0 +1,19 @@
+{
+  "name": "dividend-analysis-api",
+  "version": "1.0.0",
+  "description": "API for dividend analytics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Sagnes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "mongoose-timestamp": "^0.6.0",
+    "nodemon": "^2.0.14"
+  }
+}

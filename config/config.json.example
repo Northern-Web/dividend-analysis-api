@@ -1,0 +1,21 @@
+{
+  "development": {
+    "config_id": "development",
+    "app_name": "Dividend Analysis API",
+    "app_desc": "API for dividend stock analysis",
+    "node_port": 3000,
+    "json_indentation": 4,
+    "database": "DATABASE",
+    "database_user": "DATABASE_USER",
+    "database_password": "DATABSE_PASSWORD",
+    "MONGODB_URI": "DATABASE_CONNECTION_STRING"
+  },
+  "production": {
+    "config_id": "production",
+    "node_port": 3000,
+    "database": "DATABASE",
+    "database_user": "DATABASE_USER",
+    "database_password": "DATABSE_PASSWORD",
+    "MONGODB_URI": "DATABASE_CONNECTION_STRING"
+  }
+}
