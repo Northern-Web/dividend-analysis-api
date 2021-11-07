@@ -13,8 +13,16 @@ exports.create = async (req, res, next) => {
     });
   }
 
-
   const stock = await Stock.findOne({ "ticker": data.ticker });
+
+  if (!stock || stock == null) {
+    return res.status(404).json({
+      "api": "Dividend Analysis API",
+      "code": 404,
+      "status": "Not found",
+      "message": "Specified stock could not be found. Make sure the stock is registered before appending dividend data."
+    })
+  }
 
   Stock.findOneAndUpdate(
     {"_id": stock.id },
