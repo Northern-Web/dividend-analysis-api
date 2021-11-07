@@ -23,6 +23,9 @@ var StockSchema = new mongoose.Schema({
     dividend_amount: {
       type: Number
     },
+    currency: {
+      type: String
+    },
     date_of_approval: {
       type: Date
     },
