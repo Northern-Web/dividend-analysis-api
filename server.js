@@ -7,7 +7,11 @@ const app = express();
 // App uses
 app.use(express.json());
 
+// Router requirements
+const stockRoutes = require("./routes/stock.routes");
+
 // Router uses
+app.use("/stocks", stockRoutes);
 
 
 app.listen(process.env.PORT || 3000, () => {
