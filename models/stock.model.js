@@ -112,9 +112,8 @@ var StockSchema = new mongoose.Schema({
         type: Number
       }
     }]
+  }
 });
-
-
 
 StockSchema.plugin(timestamp);
 
