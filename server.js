@@ -8,10 +8,12 @@ const app = express();
 app.use(express.json());
 
 // Router requirements
-const stockRoutes = require("./routes/stock.routes");
+const stockRoutes    = require("./routes/stock.routes");
+const dividendRoutes = require("./routes/dividend.routes");
 
 // Router uses
 app.use("/stocks", stockRoutes);
+app.use("/dividends", dividendRoutes);
 
 
 app.listen(process.env.PORT || 3000, () => {
